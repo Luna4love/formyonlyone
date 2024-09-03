@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            position: relative;
+            color: #333;
+        }
+        h1 {
+            color: #f48fb1;
+            font-size: 24px;
+            margin: 20px 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .intro {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+        }
+        .intro h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #f48fb1;
+        }
+        .intro p {
+            margin: 5px 0;
+        }
+        .topics {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .topic {
+            font-size: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            position: relative;
+            padding-left: 20px;
+        }
+        .topic::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #f48fb1;
+            font-size: 24px;
+            line-height: 1;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: left;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .back-link {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #f48fb1;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+        .back-link:hover {
+            background-color: #ec407a;
+            transform: scale(1.1);
+        }
+    </style>
+ </head>
+<body>
+    <div class="container">
+        <h1>From My Heart: Our Memories</h1>
+        <div class="intro">
+            <h2>Happy 1st Anniversary, My Love</h2>
+            <p>Hi love! It's me. I just wanted to do something special for our 1st anniversary. Here are some of our most memorable moments through my eyes. There are so many memories I didn’t include because this would be super long, but I remember most of the details since I wrote them in my diary. It’s a little funny rereading it all now, but every moment was so precious to me. I hope this brings back lots of memories for you too. Ken hong ngai lua.</p>
+            <p>Ps: Sorry about the long paragraph with tiny letters tho. I don't know how to fix it. lol. Anywayy.. you better read all of it. It took me so long to do it.TT Lab Byu Bebe.</p>
+        </div>
+        <ul class="topics">
+            <li class="topic" onclick="toggleContent('memory1')">When Our Eyes First Met</li>
+            <div id="memory1" class="content">
+                <p>We crossed paths in the halls of school, where I caught you staring at me. My heart started beating faster when our eyes met, and I didn't know why at the time. Now, it all makes sense—even before our first real conversation, your eyes had already captured my heart.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory2')">The Moment I Knew</li>
+            <div id="memory2" class="content">
+                <p>On September 1, you texted me: "Are you going to RSC?" When I replied "No," you said I should have. When I asked why, you said, "To create more unforgettable memories." I giggled at the thought, never imagining that you would one day be mine. Though I didn’t go to RSC, we’ve created countless beautiful memories together—and I can’t wait to create even more with you.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory3')">The Day You Asked Me to Be Yours 💕</li>
+            <div id="memory3" class="content">
+                <p>I still remember that Sunday when you asked me to be your girlfriend. I was doing my homework and had posted something on my story—dedicated to you, though you didn’t notice. When I saw your notification, I couldn’t help but smile. Out of the blue, you said, "I wanted to create more memories with you, but as someone special," and asked if I’d be your girlfriend. I was shocked, my heart racing, and I thought you might be joking. But you were serious and said you’d wait for my answer the next day. That night, I couldn’t stop thinking about you. Even though I was nervous, I knew deep down my heart had already made its choice. 💖</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory4')">The Day I Became Yours 💕</li>
+            <div id="memory4" class="content">
+                <p>September 4 felt like any other day, but I was more nervous than ever. It’s funny to think about now, but I kept my distance from you because just seeing you made my heart race. The whole day went by quickly, with you constantly on my mind, though I didn’t tell anyone because I knew my friends would tease me. After school, I was at the playground when you showed up. My heart started racing again when you asked about the question from the night before. I was nervous, but I knew what I wanted. I managed to say "yes," even though I could barely look you in the eyes. That simple moment is one I’ll never forget, and with that "yes," I was yours, and I’m still yours.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory5')">Our First Time Together</li>
+            <div id="memory5" class="content">
+                <p>On September 6, you asked me if I wanted to take a walk after school. I thought you had something planned, but you didn’t—it was just about being together. I agreed, not knowing where we were headed. That day, I got a demerit for forgetting to put down my flag, but honestly, it was worth it. You told me to wait at the store and mentioned you’d be late because of choir practice. After school, I waited for you just like you said, feeling a bit awkward when time kept passing, and I started to wonder if you were coming at all. I noticed your friends and two kids at the store, looking suspicious, like they were searching for something. When they saw me, they shouted and ran back to school—it was pretty funny. Soon after, you finally arrived, wearing shorts and a black shirt, and apologized for being late. You didn’t enjoy choir practice much, did you? You asked where we should go, but I had no clue since I rarely go out. So, we just wandered around the streets. I didn’t mention it, but when we were crossing the road, I wanted to hold your hand so badly—but I held back. At first, I was worried things might be awkward between us, but it wasn’t, at least not for me. We stopped by the convenience store and got two chocolate ice creams—my favorite. The way you bit into yours made me laugh—I swear I got a brain freeze just watching you! As we walked and talked, trying to get to know each other better, I realized how tall you are compared to me. I couldn’t stop admiring you. That day, you told me your nickname, Thang No, and I thought it was so adorable. Then, after what felt like forever, you asked if you could hold my hand. When our fingers interlinked, I wished we could stay like that forever. My heart was racing when you wiped the chocolate ice cream off my lip—you always make me so nervous! Out of nowhere, you said, “Imagine if we end up together,” and it made me smile because I was hoping for the same thing. On our way to church, we saw the choir teacher, and we quickly stopped holding hands, which made me a little sad, but I understood. I can’t wait for the day when we can hold hands in front of everyone. I love being with you, and I hope we stay together forever.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory6')">Our First Kiss and the Little Moments</li>
+            <div id="memory6" class="content">
+                <p>It was September 13, and I was so excited to go to school because we were going to hang out again after classes. I couldn’t wait to spend more time with you. After school, I went home for a bit, thinking you’d be busy practicing for choir at RSC. But when I got back, there you were, riding a bicycle. You asked why I was late, with that adorable smile of yours. We drove the bike back to the PE court together, with you pedaling and me sitting behind you. It felt like such a small thing, but with you, it was perfect. After returning the bike, we started walking, just like last time. It was a simple walk, but being with you made it feel so special. We talked and laughed, wandering around with no clear destination in mind. This time, we walked even farther than before, exploring what felt like the whole neighborhood. I still remember how I got your birth year wrong—I pointed to a building with a four-digit number on it and confidently said, “Look! This building is as old as you!” You quickly corrected me, and I felt so embarrassed. You reassured me it was okay, but I still felt so bad. I promise it won’t happen again, my love! Eventually, we reached a spot near the main road. The place was clear, uncrowded, and the weather was just perfect. The sky was beautiful, with birds flying around making everything even more beautiful. But what made it truly perfect was being with you. You were talking about your family, about how you and your cousins shared clothes and all the fun you had in Kalay. I loved listening to you talk about the things you care about. You looked so happy and adorable—I wish you could see yourself the way I see you. You’re beautiful, you know that? And then, out of nowhere, something funny happened—you accidentally touched bird poop! The look on your face was so funny, and I couldn’t stop laughing. We searched for water and finally found some to clean it off. It was such a silly little moment, but I’ll never forget it. After that, we started heading back to school. I suggested we take the longer route because I wanted to spend more time with you, even if it was just a few extra minutes. On our way back, you suddenly stopped. We were on the other side of the hospital, near the traffic light, with cars passing by. You looked at our reflection in a car window and said, “We look good together.” I tried not to blush and quietly said, “Yes, we do,” though I’m not sure if you heard me. Then, out of the blue, you turned me around and pulled me close. My heart started racing, and I thought you were going to hug me. So, I tiptoed to reach you and wrapped my arms around your neck, thinking we were just hugging. But then I felt something different—your lips on mine. They were so soft, warm, and sweet. I couldn’t believe it—you were kissing me! My heart felt like it was about to burst, and I kissed you back without even thinking. When I finally realized what had happened, I felt so weak that I dropped to the ground, covering my mouth in shock. I kept repeating in my head, “We just kissed. We kissed!” It was my first kiss, and I'm glad that it was with you—no one else could ever take your place, my love. Afterward, I randomly suggested we run back to school. You looked so confused but said yes anyway, and we ran all the way back. My mind was still on our kiss—I couldn’t think about anything else. That day, I almost took your bag home with me because I was so distracted. On my way home, a friend called me to join them for a football match, but all I could think about was you. When I got home, my grandma asked if we had eaten anything. She knew we were together because I told her I was hanging out with my boyfriend. The moment she mentioned it, I instantly thought of our kiss again. I told her no and quickly went to my room. As soon as I lay down on my bed, I started replaying everything that had happened. I couldn’t even eat dinner. The whole night, all I could think about was you and us.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory7')">A Day Full of Love and Laughter</li>
+            <div id="memory7" class="content">
+                <p>Do you remember the day we played table tennis together? It was so much fun, even though I wasn't great at it. You were so patient, even though I could tell you were a little frustrated, hh. I love the way you said focus.It is so cuteee.FORECAS..hh  You kept encouraging me, telling me I was good—maybe good for a beginner, lol. That day, I met your dad for the first time. I didn’t even realize he was your father! After our game, we went to the store to buy some snacks, and on our way back, I saw your parents walking toward us. I was so scared—not because they looked scary or anything, but who wouldn’t freak out when meeting their loved one’s parents for the first time? I was holding my breath, terrified I might give them a bad first impression. I want to be with you for the rest of my life, and I can't do that if your parents don’t like me. But you were so chill. You put your arm around my waist, like there was nothing to worry about. I love you so much for that—you calmed me down instantly. Later that night, when we texted, you told me your mom said I was pretty. It made me giggle and blush. Then you called me, and I was shocked. I think it was our second time video calling, but I was still so nervous, haha. I wasn’t sure if I should pick up because I looked like a mess. But I did, thinking you were alone—but you weren’t! You had a soccer match the next day, and I thought you wouldn’t ask me to come, but you did! You told me to come early, and I was so excited to see you play. I wanted to give you something special, so I decided to make a matching bracelet. It's not much tho. I thought about making a beaded one, but since you play sports, I figured an embroidery bracelet would be better. Funny story—I actually fell asleep while prepping the materials and woke up at 4 o'clock, with the lights still on and not even in bed! As soon as I woke up, I started making it for you, but I kept making mistakes and had to redo it over and over. That little bracelet took me almost two hours, but the second one was quicker. I was so happy to meet you that day. When I arrived, you didn’t recognize me at first.TT I know nothing about sports, but you were so good. That's my first time seeing you playing football.I was so proud of you. And I’m not just saying this because you’re my boyfriend, but you looked so fine, ughhh! Especially when you were mad—so scary, yet so hot. I fell for you all over again. You were so attractive in your captain mode.hh. Not me having the biggest crush on my boyfriend. I could watch you play for the rest of my life and not get tired. After the match, you took a shower, and I almost followed you into the washroom—my brain doesn’t work properly when I’m around you, lol. I thought we were heading back to school, but I didn’t know you guys had other plans. We walked together to the bus stop, holding hands. When we sat side by side, I couldn’t resist the urge to kiss you, so I pecked you on the cheek. You looked surprised and kissed me back on my cheek—so cuteeee la! I couldn’t stop smiling. We ate lunch together with your sister and cousins. I should have ordered rice and curry for you since you don’t like Shan noodles at all, but I had a great time regardless. I want to be by your side like this forever—time flies so fast when we’re together. We went back to school, and we saw your mom. The three of us were walking side by side, but you didn’t let go of my hand. I was a little worried that your mom might think we were being disrespectful, but at the same time, I was happy because you weren’t trying to hide me. That day, you lent me your shirt, and it fit me so well, lol. I made so many memories that day. You made my day, love. I love you so much.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory8')">A Day of Us: Zoo Memories?</li>
+            <div id="memory8" class="content">
+                <p>Every moment with you is precious, but one day truly captured my heart—the day we went to the zoo on our field trip. Although the day was long and tiring, it became unforgettable simply because you were by my side. We were meant to be in pairs, and I was supposed to be with Sharon, but I couldn’t stay away from you. Even though Mrs. Pyae and Nant Peace warned me to keep my distance, my heart was already yours. That day, we took our first pictures together—our hands intertwined. Holding your hand felt like pure magic, as if the world melted away when we touched. Please, never let go of me. I can't lose you. I still remember how sweet it was when you asked if we could take a picture of us kissing. We did, right there in front of the bears, sharing a gentle, tender kiss. Ahhh it was so cute laaa. It was a perfect moment, one I hold dear. I love you more than words can express. I mean it.. truly. We rode bicycles together, and I can still feel the breeze on my face as we pedaled side by side. It wasn’t my first time on a bike, but with you there, it felt like an entirely new experience. I wanted to hold your hand as we rode, and I hope I did. I feel like I did, but I'm not really sure TT. I remember how, during the group photo, we secretly linked our pinky fingers like we always did. It's a small, tender gesture that meant the world to me. I don’t have that photo, but if you do, could you send it to me? When I think back on that day, we didn’t do anything extraordinary. We simply walked around the zoo, avoiding the crowds and picking up snacks from the convenience store. But with you by my side, every simple moment felt special. The weather was very hot, and I was turning red—so much so that the girls asked what you’d done to me. I didn’t realize how red I was until you showed me that picture. Bruh that's so uglyyy la. TT. We wandered the zoo until it was time to return, and you suggested we take a different route. I didn’t know where we were going, but I trusted you completely. The path was narrow, surrounded by trees, and it felt like we were the only two people in the world. I couldn’t stop stealing glances at you. Every time you caught me, you’d ask, “What?” and I’d reply, “Nothing.” But it wasn’t nothing—I was simply captivated by the person I love. Ahhh I love you soooo muchhhh. One moment, I couldn’t believe you were mine, and the next, your lips were on mine again. I wished I wasn’t in our school uniforms so I could have kissed you longer, even though the kiss was salty from the sweat of the day lol. I’m sorry about that, my love. I didn’t realize it would be salty!hh. I pulled away when I saw the monitors feeding the elephants. It's not because I didn’t love you or because I cared what others might think na, I just didn’t want to risk us getting into trouble. I couldn’t bear the thought of losing you.  That day was so special, so pure, and I miss it with all my heart. I wish I could relive it, just to feel that happiness again. Let’s go to the zoo together when we finally meet. I want to spend a day like that with you again. Miss you so much na.</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory9')">Lost in Love: Our Secret Stroll Together</li>
+            <div id="memory9" class="content">
+                <p>This is one of my favorite memories, a moment that I think about almost every day. I remember that day clearly—I had planned not to play volleyball because our learning center had a music band practice scheduled. But when no one wanted to practice, we decided to cancel. I didn't feel like going back home to put my saxophone away and then returning to school, so I just left it there. I don’t quite remember who suggested it, but we decided to take a walk and ended up at the Vinton Church’s compound. I thought we were just going to walk around the church, but you surprised me with an unexpected turn. I was confused and asked where we were heading, and you told me about this place your coach had once taken you and your friends. I had lived in that area for most of my life, but I had never been to that spot. The road was narrow, surrounded by houses I didn’t even know existed. It felt like we were stepping back in time or wandering through a maze. I trusted you and followed your lead. And then, we arrived. It was a railroad, with a few people around, but I didn’t mind at all because, at that moment, all that mattered was being with you. We walked along the trail, hand in hand, laughing and taking in the beautiful scenery. It was just the two of us in our little world. Being with you felt almost unreal, like it was too good to be true. I was afraid that I might wake up and find out it was all a dream. But your touch reassured me that this was real. Words can’t capture how I felt then. As my heart raced, we drew closer. You wrapped your arms around my waist, and I wrapped mine around your neck, standing on my tiptoes. There wasn’t even a breath of space between us. Our lips drew closer as we stared into each other's eyes, filled with love. I felt safe, cherished. You closed your eyes and gently pressed your lips to mine. It was so intimate, so tender, that I was willing to risk it all for that moment. We paused for a second, our eyes meeting with a smile, before we kissed again. It was so sweet that I couldn’t stop myself. I didn’t want time to move forward; I wanted to stay in that moment with you forever. I love you, Dal Sian. Time slipped away whenever I was with you. I didn’t even notice the sky growing darker or hear your cousins calling your name. Honestly, I didn’t want to stop; I didn’t want to let you go. But we had no choice. We ran back to school, and I wasn’t ready for that—I had spent almost all my energy on you. Thank you for not leaving me behind, though! I was a little worried you might get in trouble. When we got back, the school was locked, and my saxophone was still inside. We said our goodbyes, and I headed home, wondering if I should ask for the key that day or wait until the next. As soon as I got home, I went straight to the shower. But when I came out, there it was—my saxophone, sitting in my room. I was so surprised, wondering how it got there. I thought it might have been you, so I asked, and you said yes. It was such a simple thing, but it meant so much. Thank you for caring, my love. I miss that time so much. I want to kiss you like that again. I want to be with you, to hold you tight. I miss you so much, my Love...</p>
+            </div>
+            <li class="topic" onclick="toggleContent('memory10')">Moments We Shared</li>
+            <div id="memory10" class="content">
+                <p>If I talked about all the unforgettable memories, we’d be here forever. I promise this is the last one. That day was truly special. I was nervous and excited before going to Hagios, knowing I had to play the saxophone. It wasn’t a solo, but I still felt anxious. I was really hoping everything would go smoothly, but more than that, I was just praying for time to pass quickly so I could finally see you. I arrived early because Mrs. Deborah asked me to, but when I didn’t see you yet, I felt a little disappointed. I missed you so much already. The dress code was a skirt and blouse, but I preferred to wear traditional Burmese clothes, which I rarely wear. It felt uncomfortable, but when you finally arrived and saw me, the way your eyes lit up and the way you looked at me made me feel beautiful. Ahhhh! I will never forget the way you looked at me that day! Thank you, bebe. Being with you was the best part of that day. My bandmates were busy taking pictures, and I felt a bit left out until Mrs. Deborah asked me to play the piano. I wasn’t prepared for that. I’m no expert, and the idea of being in the spotlight made me uneasy. I just hate being in front of people, lol. But when I was finally with you, all that discomfort melted away. I still can’t believe how much ice cream you had that day! Remember when we waved at the kids in the other building? It was fun, hh. I cherished every second of it. I still remember how amazing you looked in your all-black outfit... damn, so effortlessly handsome. I tried on your glasses, and they were way too big, TT. We took so many pictures together, capturing the joy of the moment. I'm really glad we did. Later, during the event, I stepped out to the balcony. The sky and the view were so beautiful. I love staring at the sky—not as much as staring at you, though—that I didn’t want to go back inside. You found me there, saying you were looking for me. I knew you’d come to find me. I just wanted to be alone with you. We stayed together, scrolling through your gallery, which was filled with TikTok memes. I asked why you had so many, and you said it was for when you ran out of data—a simple, funny thing that made me adore you even more. We talked about everything and nothing, imagining ourselves dancing on rooftops as we pointed at them in the distance. Time flew by, and as the sky turned into a beautiful sunset, I wished I could freeze that moment. I wanted to kiss you so badly, but we weren’t alone. When I couldn’t hold back any longer, I gave you a quick kiss on the cheek. You were so adorable. The event ended, and we said our goodbyes—a bittersweet moment because of what came next. But I don’t regret a single thing. I’m just sorry for what you and your parents went through. I love you so much, and I hope you know that. You mean everything to me, my love.</p>
+            </div>
+        </ul>
+    </div>
+       <a href="context.html" class="back-link">← Back to Home</a>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            var allContents = document.querySelectorAll('.content');
+            allContents.forEach(function(el) {
+                if (el.id !== id) {
+                    el.style.display = 'none'; // Close other content
+                }
+            });
+            if (content.style.display === "block") {
+                content.style.display = "none"; // Hide the content
+            } else {
+                content.style.display = "block"; // Show the content
+            }
+        }
+    </script>
+</body>
+</html>
