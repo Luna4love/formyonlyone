@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            border: 3px solid #f48fb1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            position: relative;
+            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/storybook-736174_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container::before {
+            content: "Our Journey";
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #f48fb1;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #f48fb1;
+            font-size: 24px;
+            margin: 20px 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .icon-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .icon-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            width: 120px;
+        }
+        .tag {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #f48fb1;
+        }
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Journey!</h1>
+        <p>Explore the beautiful memories we've created together. Click on the sections below to dive into our story.</p>
+        <div class="icon-section">
+            <div class="icon-wrapper">
+                <a href="story.html">
+                    <img src="C:\Users\FOR YOU\Downloads\6226235053755712538.jpg" alt="Book Icon">
+                    <div class="tag">From My Heart: Our Memories</div>
+                </a>
+            </div>
+            <div class="icon-wrapper">
+                <a href="gallery.html">
+                    <img src="C:\Users\FOR YOU\Downloads\6226235053755712539.jpg" alt="Film Icon">
+                    <div class="tag">Snapshots of Us</div>
+                </a>
+            </div>
+            <div class="icon-wrapper">
+                <a href="playlist.html">
+                    <img src="C:\Users\FOR YOU\Downloads\6226235053755712537.jpg" alt="Tape Icon">
+                    <div class="tag">Songs That Remind Me of You</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
