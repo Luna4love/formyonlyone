@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock the Secret</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            border: 3px solid #f48fb1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            position: relative;
+            background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/storybook-736174_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container::before {
+            content: "Secret Notice";
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 22px;
+            font-weight: bold;
+            color: #f48fb1;
+            background: #fff;
+            padding: 10px 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px; /* Adjust for the space above */
+        }
+        h1 {
+            color: #f48fb1;
+            font-size: 20px;
+            margin: 15px 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #f48fb1;
+            border-radius: 8px;
+            text-align: center;
+            background: #fce4ec;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #f48fb1;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ec407a;
+        }
+        p {
+            color: #d32f2f;
+            font-size: 16px;
+            margin-top: 15px;
+            font-weight: bold;
+            max-width: 90%;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Unlock the Memories</h1>
+            <input type="text" id="passwordInput" placeholder="Enter 4-digit code">
+            <button onclick="checkPassword()">Unlock</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script>
+        function checkPassword() {
+            const correctPassword = '0409'; 
+            const input = document.getElementById('passwordInput').value;
+            const messageElement = document.getElementById('message');
+
+            if (input === correctPassword) {
+                window.location.href = 'welcome.html'; // Ensure 'welcome.html' exists
+            } else {
+                messageElement.textContent = 'Why don't you know laa~~. Hint: Reflect on the start of our journey together...';
+                messageElement.style.color = '#d32f2f'; // Dark red color for intensity
+                messageElement.style.fontWeight = 'bold'; // Bold text for emphasis
+            }
+        }
+    </script>
+</body>
+</html>
